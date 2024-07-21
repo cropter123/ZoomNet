@@ -29,9 +29,15 @@ namespace ZoomNet.Models
 		/// <summary>
 		/// The participant joined via VoIP using a Windows device.
 		/// </summary>
+		[MultipleValuesEnumMember(DefaultValue = "Windows", OtherValues = new[] { "WIN 11" })]
+		Windows11,
+
+		/// <summary>
+		/// The participant joined via VoIP using a Windows device.
+		/// </summary>
 		[MultipleValuesEnumMember(DefaultValue = "Windows", OtherValues = new[] { "WIN" })]
 		Windows,
-
+  
 		/// <summary>
 		/// The participant joined via VoIP using a Mac device.
 		/// </summary>
